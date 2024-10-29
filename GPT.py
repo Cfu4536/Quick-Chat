@@ -17,7 +17,7 @@ class GPT3_5_turbo():
         self.key_index = 0
         self.client = OpenAI(
             # defaults to os.environ.get("OPENAI_API_KEY")
-            api_key="sk-rt2LCZmZpik01x7YEU79SbwJLvHEoc7Bjj2xJ3FMjIt6eLca",
+            api_key="",# your api key
             base_url="https://api.chatanywhere.tech/v1"
         )
 
@@ -107,7 +107,7 @@ class GPT3_5_turbo():
             for line in f.readlines():
                 self.keys.append(line.strip())
         if len(self.keys) == 0:
-            self.keys.append("sk-rt2LCZmZpik01x7YEU79SbwJLvHEoc7Bjj2xJ3FMjIt6eLca")
+            self.keys.append("")# your api key
         self.keys_num = len(self.keys)
         print("use api:", self.keys[self.key_index])
         self.client = OpenAI(
