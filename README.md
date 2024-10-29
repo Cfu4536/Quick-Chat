@@ -6,6 +6,8 @@
 
 <img src="help.assets/image-20231205151332823.png" alt="image-20231205151332823" style="zoom:67%;" />
 
+![aaa](E:\Desktop\aaa.png)
+
 ## 快捷键
 
 * 推荐和鼓励使用快捷键，这将大大提高你的使用效率
@@ -14,7 +16,7 @@
 
 * 快速调出和隐藏本工具 
 
-### alt+q(question)/ctrl+enter(回车)
+### alt+q(question) / ctrl+enter
 
 * 快速发送输入框问题 
 
@@ -78,8 +80,6 @@
 ### 效率
 
 ![image-20231203204555419](help.assets/image-20231203204555419.png)
-
-* 打开一些网页
 
 ### 帮助
 
