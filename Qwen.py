@@ -10,7 +10,7 @@ from tools import *
 
 class Qwen():
     def __init__(self):
-        self.api_key = "sk-149e4e6a676c43dfa05f96d5eb62edb4"
+        self.api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx" # your api key
         self.messages = []
         self.conversation_count = 0  # 对话轮数
         self.tocken_count = 0
