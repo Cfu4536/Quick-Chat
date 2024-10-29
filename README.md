@@ -46,9 +46,9 @@ sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4
 
 ``` json
 {
-  "name": "cfu223", #用户名
-  "use-tokens": 0, #用了多少taken了
-  "code": "6a5850bb5b37aae985b0ffba6d8e70a3" #点击“开始”->“获取token”，获取设备码，用项目中./tools/生成序列号.py，生成后序列号后，填入。（release中懒得砍掉这个功能了，以后再说，白嫖就自己研究一下吧，）
+  "name": "cfu223", //用户名
+  "use-tokens": 0, //用了多少taken了
+  "code": "6a5850bb5b37aae985b0ffba6d8e70a3" //点击“开始”->“获取token”，获取设备码，用项目中./tools/生成序列号.py，生成后序列号后，填入。（release中懒得砍掉这个功能了，以后再说，白嫖就自己研究一下吧，）
 }
 ```
 
