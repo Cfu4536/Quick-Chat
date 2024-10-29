@@ -6,7 +6,7 @@
 
 <img src="help.assets/image-20231205151332823.png" alt="image-20231205151332823" style="zoom:67%;" />
 
-![aaa](E:\Desktop\quickChat\src\html\help.assets\aaa.png)
+<img src="help.assets/aaa.png" alt="image-aaa" style="zoom:67%;" />
 
 ## 快捷键
 
