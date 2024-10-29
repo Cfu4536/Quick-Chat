@@ -14,21 +14,51 @@
 
 ### alt+w(window)
 
-* 快速调出和隐藏本工具 
+* 快速**调出**和**隐藏**本工具 
 
 ### alt+q(question) / ctrl+enter
 
-* 快速发送输入框问题 
+* 快速**发送**输入框问题 
 
 ### alt+c(clear)
 
-* 清空对话内容
+* **清空对话**内容
+
+## 配置
+
+### 获取api key
+
+* 本项目使用开源的国内镜像的gpt3.5 API项目，使用github认证即可**领取一个免费key**，链接如下：
+* [chatanywhere/GPT_API_free: Free ChatGPT API Key，免费ChatGPT API，支持GPT4 API（免费），ChatGPT国内可用免费转发API，直连无需代理。可以搭配ChatBox等软件/插件使用，极大降低接口使用成本。国内即可无限制畅快聊天。](https://github.com/chatanywhere/GPT_API_free/tree/main)
+
+### 修改配置文件
+
+* 在./conf/gpt_keys.txt中输入获取的key，可以输多个，不要有多余的空行，程序会循环调用key
+
+```
+sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1
+sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx2
+sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx3
+sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4
+```
+
+* 用户信息配置./user.json配置信息
+
+``` json
+{
+  "name": "cfu223", #用户名
+  "use-tokens": 0, #用了多少taken了
+  "code": "6a5850bb5b37aae985b0ffba6d8e70a3" #点击“开始”->“获取token”，获取设备码，用项目中./tools/生成序列号.py，生成后序列号后，填入。（release中懒得砍掉这个功能了，以后再说，白嫖就自己研究一下吧，）
+}
+```
 
 ## 基础使用
 
 ### 开始
 
-![image-20231205141013443](help.assets/image-20231205141013443.png)![image-20231203202813389](help.assets/image-20231203202813389.png)![image-20231203202830895](help.assets/image-20231203202830895.png)
+<img src="help.assets/image-20231203202813389.png" alt="image-20231203202813389" style="zoom:67%;" />
+
+<img src="help.assets/image-20231203202830895.png" alt="image-20231203202830895" style="zoom:67%;" />
 
 #### 新建对话
 
@@ -101,10 +131,13 @@
 
 * 可以给我打钱。
 
-## 其他功能
+## 其他
 
 ### 页面调整
 
 <img src="help.assets/image-20231205151708234.png" alt="image-20231205151708234" style="zoom:67%;" />
 
 <img src="help.assets/image-20231205151810778.png" alt="image-20231205151810778" style="zoom:67%;" />
+
+## 关于项目
+
