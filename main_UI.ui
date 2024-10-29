@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1400</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="5,1,0">
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>728</width>
+           <height>414</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,1">
+        <item>
+         <widget class="QPlainTextEdit" name="user_input">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #f0f0f0;
+border-radius: 10px; 
+border-width: 1px;
+border-style: solid;
+border-color: rgb(100, 100, 100);
+
+
+</string>
+          </property>
+          <property name="plainText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sent_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>华文细黑</family>
+            <pointsize>22</pointsize>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+
+background-color: #66929ff5;
+border-radius: 10px; 
+border: 2px groove gray;
+border-style: outset;
+font-family: '华文细黑', Arial, sans-serif;
+color: #929ff5;
+}
+
+QPushButton:hover{
+background-color: #44929ff5;
+border-radius: 10px; 
+border: 2px groove gray;
+border-style: outset;
+font-family: '华文细黑', Arial, sans-serif;
+}
+
+QPushButton:pressed{
+background-color: #11929ff5;
+border-radius: 10px; 
+border: 2px groove gray;
+border-style: outset;
+font-family: '华文细黑', Arial, sans-serif;
+}
+
+QPushButton:released{
+background-color: #66929ff5;
+border-radius: 10px; 
+border: 2px groove gray;
+border-style: outset;
+font-family: '华文细黑', Arial, sans-serif;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>➤</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0,0,1">
+        <item>
+         <widget class="QLabel" name="label_tokens">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>tockens：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>|</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_role">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Role:</string>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>|</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="input_length">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0/2000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>等线 Light</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(225, 225, 225);
+border-radius: 10px; 
+border-width: 1px;
+border-style: solid;
+border-color: rgb(100, 100, 100);</string>
+          </property>
+          <property name="text">
+           <string>按住我可拖拽</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>754</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>导出对话内容</string>
+     </property>
+     <addaction name="action_md"/>
+     <addaction name="action_html"/>
+     <addaction name="separator"/>
+     <addaction name="action_docx"/>
+     <addaction name="separator"/>
+     <addaction name="action_txt"/>
+     <addaction name="action_pdf"/>
+    </widget>
+    <widget class="QMenu" name="menu_11">
+     <property name="title">
+      <string>角色</string>
+     </property>
+     <addaction name="actionzhushou"/>
+     <addaction name="separator"/>
+     <addaction name="actionzhongyiying"/>
+     <addaction name="actionyingyizhong"/>
+     <addaction name="actionlunwenrunse"/>
+     <addaction name="separator"/>
+     <addaction name="actionnvninvyou"/>
+     <addaction name="actionxuninanyou"/>
+     <addaction name="actionzhanan"/>
+     <addaction name="separator"/>
+     <addaction name="actionc_zhuanjai"/>
+     <addaction name="actionjava"/>
+     <addaction name="actionpython"/>
+     <addaction name="actionwebqianduan"/>
+     <addaction name="actionwebhouduan"/>
+     <addaction name="actionlinux"/>
+     <addaction name="actiondeeplearning"/>
+     <addaction name="actionmachine"/>
+    </widget>
+    <addaction name="new_2"/>
+    <addaction name="menu_4"/>
+    <addaction name="actionhiden"/>
+    <addaction name="separator"/>
+    <addaction name="menu_11"/>
+    <addaction name="separator"/>
+    <addaction name="actiongettokens"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionhelp"/>
+    <addaction name="actionupdate"/>
+    <addaction name="actionaliyun"/>
+    <addaction name="separator"/>
+    <addaction name="actiondonation"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <widget class="QMenu" name="menu_12">
+     <property name="title">
+      <string>个性化</string>
+     </property>
+     <addaction name="actionusername"/>
+    </widget>
+    <addaction name="menu_12"/>
+    <addaction name="actionada"/>
+    <addaction name="separator"/>
+    <addaction name="actionstart"/>
+    <addaction name="actioncancelstartup"/>
+    <addaction name="separator"/>
+    <addaction name="actionAPIkey"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>效率</string>
+    </property>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>大语言</string>
+     </property>
+     <addaction name="actionGPT"/>
+     <addaction name="actionwenxin"/>
+     <addaction name="actionxunfei"/>
+     <addaction name="actiontongyiqianwen"/>
+    </widget>
+    <widget class="QMenu" name="menu_8">
+     <property name="title">
+      <string>音乐</string>
+     </property>
+     <addaction name="actiontianyin"/>
+     <addaction name="actionsuno"/>
+    </widget>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>文档</string>
+     </property>
+     <addaction name="actiongamma"/>
+     <addaction name="actionbaiduwendang"/>
+    </widget>
+    <widget class="QMenu" name="menu_9">
+     <property name="title">
+      <string>图像生成</string>
+     </property>
+     <addaction name="actionlibulibu"/>
+     <addaction name="actionBing_DALLE3"/>
+    </widget>
+    <widget class="QMenu" name="menu_10">
+     <property name="title">
+      <string>其他</string>
+     </property>
+     <addaction name="actionai_bot"/>
+    </widget>
+    <widget class="QMenu" name="menu_13">
+     <property name="title">
+      <string>提示词</string>
+     </property>
+     <addaction name="actiontishijinglin"/>
+     <addaction name="actionChatGPT_SC"/>
+    </widget>
+    <addaction name="menu_6"/>
+    <addaction name="menu_7"/>
+    <addaction name="menu_9"/>
+    <addaction name="menu_8"/>
+    <addaction name="menu_13"/>
+    <addaction name="menu_10"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_2">
+   <property name="text">
+    <string>新建对话</string>
+   </property>
+  </action>
+  <action name="open_2">
+   <property name="text">
+    <string>打开对话</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="text">
+    <string>保存对话</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>使用文档</string>
+   </property>
+  </action>
+  <action name="actionupdate">
+   <property name="text">
+    <string>检查更新</string>
+   </property>
+  </action>
+  <action name="actionstart">
+   <property name="text">
+    <string>设置开机自启</string>
+   </property>
+  </action>
+  <action name="actionasd_2">
+   <property name="text">
+    <string>asd</string>
+   </property>
+  </action>
+  <action name="actionada">
+   <property name="text">
+    <string>模型切换</string>
+   </property>
+  </action>
+  <action name="actionda">
+   <property name="text">
+    <string>最大/最小化窗口</string>
+   </property>
+  </action>
+  <action name="action_md">
+   <property name="text">
+    <string>.md</string>
+   </property>
+  </action>
+  <action name="action_html">
+   <property name="text">
+    <string>.html</string>
+   </property>
+  </action>
+  <action name="actionGPT">
+   <property name="text">
+    <string>GPT</string>
+   </property>
+  </action>
+  <action name="actiontongyi">
+   <property name="text">
+    <string>tongyi</string>
+   </property>
+  </action>
+  <action name="actionwenxin">
+   <property name="text">
+    <string>文心一言</string>
+   </property>
+  </action>
+  <action name="actionxunfei">
+   <property name="text">
+    <string>讯飞星火</string>
+   </property>
+  </action>
+  <action name="actiongamma">
+   <property name="text">
+    <string>gamma</string>
+   </property>
+  </action>
+  <action name="actionwpsAI">
+   <property name="text">
+    <string>wpsAI</string>
+   </property>
+  </action>
+  <action name="actiontianyin">
+   <property name="text">
+    <string>网易天音</string>
+   </property>
+  </action>
+  <action name="actionlibulibu">
+   <property name="text">
+    <string>libulibu</string>
+   </property>
+  </action>
+  <action name="actionbaiduwendang">
+   <property name="text">
+    <string>百度文档助手</string>
+   </property>
+  </action>
+  <action name="actionai_bot">
+   <property name="text">
+    <string>ai-bot</string>
+   </property>
+  </action>
+  <action name="actionmidjourney">
+   <property name="text">
+    <string>midjourney</string>
+   </property>
+  </action>
+  <action name="actionBing_DALLE3">
+   <property name="text">
+    <string>Bing-DALLE3</string>
+   </property>
+  </action>
+  <action name="actionaliyun">
+   <property name="text">
+    <string>阿里云服务</string>
+   </property>
+  </action>
+  <action name="actiongettokens">
+   <property name="text">
+    <string>获取token</string>
+   </property>
+  </action>
+  <action name="actiondonation">
+   <property name="text">
+    <string>赞助</string>
+   </property>
+  </action>
+  <action name="actioncancelstartup">
+   <property name="text">
+    <string>取消开机自启</string>
+   </property>
+  </action>
+  <action name="actionconfig">
+   <property name="text">
+    <string>config</string>
+   </property>
+  </action>
+  <action name="actionzhushou">
+   <property name="text">
+    <string>AI问答助手</string>
+   </property>
+  </action>
+  <action name="actionzhongyiying">
+   <property name="text">
+    <string>中译英</string>
+   </property>
+  </action>
+  <action name="actionyingyizhong">
+   <property name="text">
+    <string>英译中</string>
+   </property>
+  </action>
+  <action name="actionlunwenrunse">
+   <property name="text">
+    <string>论文润色</string>
+   </property>
+  </action>
+  <action name="actionnvninvyou">
+   <property name="text">
+    <string>虚拟女友</string>
+   </property>
+  </action>
+  <action name="actionxuninanyou">
+   <property name="text">
+    <string>虚拟男友</string>
+   </property>
+  </action>
+  <action name="actionpython">
+   <property name="text">
+    <string>python高手</string>
+   </property>
+  </action>
+  <action name="actionjava">
+   <property name="text">
+    <string>java高手</string>
+   </property>
+  </action>
+  <action name="actionwebqianduan">
+   <property name="text">
+    <string>web前端高手</string>
+   </property>
+  </action>
+  <action name="actionusername">
+   <property name="text">
+    <string>自定义昵称</string>
+   </property>
+  </action>
+  <action name="actionzhanan">
+   <property name="text">
+    <string>渣男</string>
+   </property>
+  </action>
+  <action name="actiondeeplearning">
+   <property name="text">
+    <string>深度学习专家</string>
+   </property>
+  </action>
+  <action name="actionhiden">
+   <property name="text">
+    <string>隐藏</string>
+   </property>
+  </action>
+  <action name="action_docx">
+   <property name="text">
+    <string>.docx</string>
+   </property>
+  </action>
+  <action name="action_txt">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="action_pdf">
+   <property name="text">
+    <string>.pdf</string>
+   </property>
+  </action>
+  <action name="actionAPIkey">
+   <property name="text">
+    <string>API Key</string>
+   </property>
+  </action>
+  <action name="actiontongyiqianwen">
+   <property name="text">
+    <string>通义千问</string>
+   </property>
+  </action>
+  <action name="actionsuno">
+   <property name="text">
+    <string>suno</string>
+   </property>
+  </action>
+  <action name="actiontishijinglin">
+   <property name="text">
+    <string>提示精灵</string>
+   </property>
+  </action>
+  <action name="actionChatGPT_SC">
+   <property name="text">
+    <string>ChatGPT_SC</string>
+   </property>
+  </action>
+  <action name="actionc_zhuanjai">
+   <property name="text">
+    <string>c++高手</string>
+   </property>
+  </action>
+  <action name="actionwebhouduan">
+   <property name="text">
+    <string>web后端高手</string>
+   </property>
+  </action>
+  <action name="actionlinux">
+   <property name="text">
+    <string>linux高手</string>
+   </property>
+  </action>
+  <action name="actionmachine">
+   <property name="text">
+    <string>机器学习专家</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
