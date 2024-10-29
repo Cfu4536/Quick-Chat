@@ -139,5 +139,8 @@ sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4
 
 <img src="help.assets/image-20231205151810778.png" alt="image-20231205151810778" style="zoom:67%;" />
 
-## 关于项目
+## 交流
 
+* QQ：2778297606
+
+  
